@@ -12,8 +12,16 @@ function generate(){
     }else{
         img.classList.remove('show');
         input.classList.add('error');
+        setTimeout(()=>{
+            input.classList.remove('error');
+        },1000)
+       
     }
+   
         
 }
+
+
+
 
 

@@ -58,11 +58,23 @@
     cursor:pointer;
 }
 .error{
-    animation:error ;
+    animation:error 0.1s linear 10;
 }
 
-@keyframe error{
-    0{
-        transform:translate(-100px)
+@keyframes error{
+    0%{
+        transform:translateX(0)
+    }
+    25%{
+        transform:translateX(-3px);
+    }
+    50%{
+        transform:translateX(0)
+    }
+    75%{
+        transform:translateX(3px)
+    }
+    100%{
+        transform:translateX(0)
     }
 }
